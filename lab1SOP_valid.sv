@@ -1,8 +1,8 @@
 `default_nettype none
 
-module lab1_SOP (
+module lab1SOP_valid (
     input logic A, B, C, D, E, F,
-    output logic h);
+    output logic valid);
 
     logic nA, nB, nC, nD, nE, nF;
     not (nA, A);
@@ -37,8 +37,8 @@ module lab1_SOP (
     //AB'D'E'
     nand (na6, A, nB, nD, nE);
 
-    //B'C'DF'
-    nand (na7, nB, nC, D, nF);
+    //B'C'D'F'
+    nand (na7, nB, nC, nD, nF);
 
     //A'B'CDF'
     logic na13;
@@ -68,6 +68,6 @@ module lab1_SOP (
     nand (na16, na16, na16);
     nand (na17, na17, na17);
 
-    nand (h, na15, na16, na17);
+    nand (valid, na15, na16, na17);
 
-endmodule : lab1_SOP
+endmodule : lab1SOP_valid
