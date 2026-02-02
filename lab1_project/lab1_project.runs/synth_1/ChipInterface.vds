@@ -1,0 +1,443 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Jan 28 19:14:29 2026
+# Process ID         : 37677
+# Current directory  : /afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/lab1_project/lab1_project.runs/synth_1
+# Command line       : vivado -log ChipInterface.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ChipInterface.tcl
+# Log file           : /afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/lab1_project/lab1_project.runs/synth_1/ChipInterface.vds
+# Journal file       : /afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/lab1_project/lab1_project.runs/synth_1/vivado.jou
+# Running On         : hh-1305-00.lan.local.cmu.edu
+# Platform           : RedHatEnterprise
+# Operating System   : Red Hat Enterprise Linux release 8.10 (Ootpa)
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i7-12700
+# CPU Frequency      : 2100.000 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 20
+# Host memory        : 33109 MB
+# Swap memory        : 17179 MB
+# Total Virtual      : 50289 MB
+# Available Virtual  : 41739 MB
+#-----------------------------------------------------------
+source ChipInterface.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental /afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/lab1_project/lab1_project.srcs/utils_1/imports/synth_1/ChipInterface.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/lab1_project/lab1_project.srcs/utils_1/imports/synth_1/ChipInterface.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top ChipInterface -part xc7s50csga324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 37762
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2129.234 ; gain = 429.688 ; free physical = 17296 ; free virtual = 38559
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ChipInterface' [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/chipInterface.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'Zorgian' [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/lab1.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'Zorgian' (0#1) [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/lab1.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'ChipInterface' (0#1) [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/chipInterface.sv:1]
+WARNING: [Synth 8-7129] Port LD[13] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LD[12] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LD[11] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LD[10] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LD[9] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LD[8] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LD[7] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LD[6] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LD[5] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LD[4] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LD[3] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LD[2] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LD[1] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LD[0] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[15] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[14] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[13] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[12] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[11] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[10] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[9] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[8] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[7] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[6] in module ChipInterface is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2201.172 ; gain = 501.625 ; free physical = 17209 ; free virtual = 38476
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2218.984 ; gain = 519.438 ; free physical = 17196 ; free virtual = 38463
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2218.984 ; gain = 519.438 ; free physical = 17196 ; free virtual = 38463
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2218.984 ; gain = 0.000 ; free physical = 17196 ; free virtual = 38463
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc]
+WARNING: [Vivado 12-584] No ports matched 'CLOCK_100'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'BTN_IBUF[3]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTN[0]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTN[1]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTN[2]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTN[3]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB0[0]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB0[1]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB0[2]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB1[0]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB1[1]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB1[2]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D1_AN[0]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D1_AN[1]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D1_AN[2]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D1_AN[3]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D1_SEG[0]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D1_SEG[1]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D1_SEG[2]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D1_SEG[3]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D1_SEG[4]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D1_SEG[5]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D1_SEG[6]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D1_SEG[7]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D2_AN[0]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D2_AN[1]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D2_AN[2]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D2_AN[3]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D2_SEG[0]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D2_SEG[1]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D2_SEG[2]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D2_SEG[3]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D2_SEG[4]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D2_SEG[5]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D2_SEG[6]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D2_SEG[7]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'UART_rxd'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'UART_txd'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_clk_n'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_clk_p'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tx_n[0]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tx_n[1]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tx_n[2]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tx_p[0]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tx_p[1]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tx_p[2]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'left_audio_out'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'right_audio_out'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ble_uart_tx'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ble_uart_rx'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ble_uart_rts'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:113]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:113]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ble_uart_cts'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'servo0'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'servo1'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:118]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:118]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'servo2'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:119]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:119]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'servo3'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:120]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ChipInterface_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ChipInterface_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2374.734 ; gain = 0.000 ; free physical = 17167 ; free virtual = 38434
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2374.734 ; gain = 0.000 ; free physical = 17167 ; free virtual = 38434
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2374.734 ; gain = 675.188 ; free physical = 17167 ; free virtual = 38435
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s50csga324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2382.738 ; gain = 683.191 ; free physical = 17167 ; free virtual = 38435
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2382.738 ; gain = 683.191 ; free physical = 17167 ; free virtual = 38435
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2382.738 ; gain = 683.191 ; free physical = 17166 ; free virtual = 38435
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port LD[13] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LD[12] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LD[11] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LD[10] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LD[9] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LD[8] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LD[7] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LD[6] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LD[5] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LD[4] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LD[3] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LD[2] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LD[1] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LD[0] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[15] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[14] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[13] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[12] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[11] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[10] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[9] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[8] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[7] in module ChipInterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[6] in module ChipInterface is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2382.738 ; gain = 683.191 ; free physical = 17153 ; free virtual = 38431
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2397.738 ; gain = 698.191 ; free physical = 17081 ; free virtual = 38358
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2397.738 ; gain = 698.191 ; free physical = 17081 ; free virtual = 38358
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2407.754 ; gain = 708.207 ; free physical = 17071 ; free virtual = 38348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2568.566 ; gain = 869.020 ; free physical = 16925 ; free virtual = 38202
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2568.566 ; gain = 869.020 ; free physical = 16925 ; free virtual = 38202
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2568.566 ; gain = 869.020 ; free physical = 16925 ; free virtual = 38202
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2568.566 ; gain = 869.020 ; free physical = 16925 ; free virtual = 38202
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2568.566 ; gain = 869.020 ; free physical = 16925 ; free virtual = 38202
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2568.566 ; gain = 869.020 ; free physical = 16925 ; free virtual = 38202
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT6  |     2|
+|2     |IBUF  |     6|
+|3     |OBUF  |     2|
+|4     |OBUFT |    14|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2568.566 ; gain = 869.020 ; free physical = 16925 ; free virtual = 38202
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 25 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2568.566 ; gain = 713.270 ; free physical = 16925 ; free virtual = 38202
+Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2568.574 ; gain = 869.020 ; free physical = 16925 ; free virtual = 38202
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2568.574 ; gain = 0.000 ; free physical = 16925 ; free virtual = 38202
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2568.574 ; gain = 0.000 ; free physical = 17093 ; free virtual = 38370
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 708535cf
+INFO: [Common 17-83] Releasing license: Synthesis
+23 Infos, 105 Warnings, 56 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2568.574 ; gain = 1025.543 ; free physical = 17094 ; free virtual = 38371
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1739.979; main = 1730.528; forked = 278.751
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3321.238; main = 2568.570; forked = 938.496
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2592.578 ; gain = 0.000 ; free physical = 17095 ; free virtual = 38372
+INFO: [Common 17-1381] The checkpoint '/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/lab1_project/lab1_project.runs/synth_1/ChipInterface.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file ChipInterface_utilization_synth.rpt -pb ChipInterface_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 28 19:15:00 2026...
