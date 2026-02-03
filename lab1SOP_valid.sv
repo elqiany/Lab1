@@ -1,4 +1,4 @@
-`default_nettype none
+//`default_nettype none
 
 module lab1SOP_valid (
     input logic A, B, C, D, E, F,

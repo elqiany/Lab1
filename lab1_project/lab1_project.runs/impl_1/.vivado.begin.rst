@@ -1,20 +1,5 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="eqian" Host="hh-1305-00.lan.local.cmu.edu" Pid="33152" HostCore="20" HostMemory="32333648">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="eqian" Host="hh-1305-00.lan.local.cmu.edu" Pid="35691" HostCore="20" HostMemory="32333648">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="eqian" Host="hh-1305-00.lan.local.cmu.edu" Pid="38196" HostCore="20" HostMemory="32333648">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="eqian" Host="hh-1305-00.lan.local.cmu.edu" Pid="40073" HostCore="20" HostMemory="32333648">
+    <Process Command="vivado" Owner="eqian" Host="hh-1305-15.lan.local.cmu.edu" Pid="1021694" HostCore="20" HostMemory="32333656">
     </Process>
 </ProcessHandle>

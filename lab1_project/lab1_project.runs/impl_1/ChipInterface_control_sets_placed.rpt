@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
-| Date         : Wed Jan 28 19:15:34 2026
-| Host         : hh-1305-00.lan.local.cmu.edu running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
+| Date         : Tue Feb  3 15:58:16 2026
+| Host         : hh-1305-15.lan.local.cmu.edu running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
 | Command      : report_control_sets -verbose -file ChipInterface_control_sets_placed.rpt
 | Design       : ChipInterface
 | Device       : xc7s50

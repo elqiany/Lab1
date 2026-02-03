@@ -1,0 +1,451 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Feb  3 15:39:14 2026
+# Process ID         : 1010059
+# Current directory  : /afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1
+# Command line       : vivado
+# Log file           : /afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/vivado.log
+# Journal file       : /afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/vivado.jou
+# Running On         : hh-1305-15.lan.local.cmu.edu
+# Platform           : RedHatEnterprise
+# Operating System   : Red Hat Enterprise Linux release 8.10 (Ootpa)
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i7-12700
+# CPU Frequency      : 2100.000 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 20
+# Host memory        : 33109 MB
+# Swap memory        : 17179 MB
+# Total Virtual      : 50289 MB
+# Available Virtual  : 41818 MB
+#-----------------------------------------------------------
+start_gui
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at /afs/ece.cmu.edu/support/xilinx/xilinx.release/Vivado-2024.2/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at /afs/ece.cmu.edu/support/xilinx/xilinx.release/Vivado-2024.2/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at /afs/ece.cmu.edu/support/xilinx/xilinx.release/Vivado-2024.2/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at /afs/ece.cmu.edu/support/xilinx/xilinx.release/Vivado-2024.2/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /afs/ece.cmu.edu/support/xilinx/xilinx.release/Vivado-2024.2/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /afs/ece.cmu.edu/support/xilinx/xilinx.release/Vivado-2024.2/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /afs/ece.cmu.edu/support/xilinx/xilinx.release/Vivado-2024.2/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at /afs/ece.cmu.edu/support/xilinx/xilinx.release/Vivado-2024.2/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at /afs/ece.cmu.edu/support/xilinx/xilinx.release/Vivado-2024.2/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at /afs/ece.cmu.edu/support/xilinx/xilinx.release/Vivado-2024.2/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at /afs/ece.cmu.edu/support/xilinx/xilinx.release/Vivado-2024.2/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /afs/ece.cmu.edu/support/xilinx/xilinx.release/Vivado-2024.2/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /afs/ece.cmu.edu/support/xilinx/xilinx.release/Vivado-2024.2/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /afs/ece.cmu.edu/support/xilinx/xilinx.release/Vivado-2024.2/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at /afs/ece.cmu.edu/support/xilinx/xilinx.release/Vivado-2024.2/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at /afs/ece.cmu.edu/support/xilinx/xilinx.release/Vivado-2024.2/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at /afs/ece.cmu.edu/support/xilinx/xilinx.release/Vivado-2024.2/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at /afs/ece.cmu.edu/support/xilinx/xilinx.release/Vivado-2024.2/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /afs/ece.cmu.edu/support/xilinx/xilinx.release/Vivado-2024.2/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /afs/ece.cmu.edu/support/xilinx/xilinx.release/Vivado-2024.2/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /afs/ece.cmu.edu/support/xilinx/xilinx.release/Vivado-2024.2/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at /afs/ece.cmu.edu/support/xilinx/xilinx.release/Vivado-2024.2/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at /afs/ece.cmu.edu/support/xilinx/xilinx.release/Vivado-2024.2/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /afs/ece.cmu.edu/support/xilinx/xilinx.release/Vivado-2024.2/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /afs/ece.cmu.edu/support/xilinx/xilinx.release/Vivado-2024.2/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /afs/ece.cmu.edu/support/xilinx/xilinx.release/Vivado-2024.2/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+create_project project_1 /afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/project_1 -part xc7s50csga324-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/afs/ece.cmu.edu/support/xilinx/xilinx.release/Vivado-2024.2/Vivado/2024.2/data/ip'.
+add_files -norecurse {/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/lab1SOP_valid.sv /afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/lab1SOP_vowel.sv /afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/chipInterface.sv}
+add_files -fileset constrs_1 -norecurse /afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc
+update_compile_order -fileset sources_1
+set_property top ChipInterface [current_fileset]
+update_compile_order -fileset sources_1
+synth_design -top ChipInterface -part xc7s50csga324-1 -lint 
+Command: synth_design -top ChipInterface -part xc7s50csga324-1 -lint
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1011074
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 8513.004 ; gain = 404.863 ; free physical = 14849 ; free virtual = 38347
+---------------------------------------------------------------------------------
+Clean up Linter database...
+INFO: [Synth 8-6157] synthesizing module 'ChipInterface' [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/chipInterface.sv:1]
+ERROR: [Synth 8-439] module 'Zorgian' not found [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/chipInterface.sv:5]
+ERROR: [Synth 8-6156] failed synthesizing module 'ChipInterface' [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/chipInterface.sv:1]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 8582.941 ; gain = 474.801 ; free physical = 14777 ; free virtual = 38275
+---------------------------------------------------------------------------------
+synthesize failed
+INFO: [Common 17-83] Releasing license: Synthesis
+6 Infos, 0 Warnings, 0 Critical Warnings and 2 Errors encountered.
+synth_design completed successfully
+ERROR: [Common 17-39] 'synth_design' failed due to earlier errors.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/chipInterface.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/lab1SOP_vowel.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/lab1SOP_vowel.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/lab1SOP_vowel.sv:]
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/chipInterface.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/lab1SOP_vowel.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/lab1SOP_vowel.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/lab1SOP_vowel.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/chipInterface.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/lab1SOP_vowel.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/lab1SOP_valid.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/chipInterface.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/chipInterface.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/chipInterface.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/lab1SOP_vowel.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/lab1SOP_valid.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/lab1SOP_valid.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/lab1SOP_valid.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/chipInterface.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/lab1SOP_vowel.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/lab1SOP_valid.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/lab1SOP_vowel.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/lab1SOP_vowel.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/chipInterface.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/lab1SOP_vowel.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/lab1SOP_valid.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/chipInterface.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/chipInterface.sv:]
+synth_design -top ChipInterface -part xc7s50csga324-1 -lint 
+Command: synth_design -top ChipInterface -part xc7s50csga324-1 -lint
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 8834.117 ; gain = 0.000 ; free physical = 15371 ; free virtual = 38429
+---------------------------------------------------------------------------------
+Clean up Linter database...
+INFO: [Synth 8-6157] synthesizing module 'ChipInterface' [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/chipInterface.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'lab1SOP_valid' [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/lab1SOP_valid.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'lab1SOP_valid' (1#1) [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/lab1SOP_valid.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'lab1SOP_vowel' [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/lab1SOP_vowel.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'lab1SOP_vowel' (2#1) [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/lab1SOP_vowel.sv:3]
+WARNING: [Synth 8-7071] port 'A' of module 'lab1SOP_vowel' is unconnected for instance 'U' [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/chipInterface.sv:8]
+WARNING: [Synth 8-7071] port 'B' of module 'lab1SOP_vowel' is unconnected for instance 'U' [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/chipInterface.sv:8]
+WARNING: [Synth 8-7071] port 'C' of module 'lab1SOP_vowel' is unconnected for instance 'U' [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/chipInterface.sv:8]
+WARNING: [Synth 8-7071] port 'D' of module 'lab1SOP_vowel' is unconnected for instance 'U' [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/chipInterface.sv:8]
+WARNING: [Synth 8-7071] port 'E' of module 'lab1SOP_vowel' is unconnected for instance 'U' [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/chipInterface.sv:8]
+WARNING: [Synth 8-7071] port 'F' of module 'lab1SOP_vowel' is unconnected for instance 'U' [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/chipInterface.sv:8]
+WARNING: [Synth 8-7023] instance 'U' of module 'lab1SOP_vowel' has 7 connections declared, but only 1 given [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/chipInterface.sv:8]
+INFO: [Synth 8-6155] done synthesizing module 'ChipInterface' (3#1) [/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/chipInterface.sv:1]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 8834.117 ; gain = 0.000 ; free physical = 15368 ; free virtual = 38428
+---------------------------------------------------------------------------------
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
+| Date         : Tue Feb  3 15:44:17 2026
+| Host         : hh-1305-15.lan.local.cmu.edu running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+RTL Linter Report
+
+Table of Contents
+-----------------
+1. Summary
+
+1. Summary
+----------
+
++-----------+----------+--------------+----------+
+| Rule ID   | Severity | # Violations | # Waived |
++-----------+----------+--------------+----------+
+| ASSIGN-9  | WARNING  | 1            | 0        |
+| ASSIGN-10 | WARNING  | 1            | 0        |
+| ASSIGN-12 | WARNING  | 6            | 0        |
++-----------+----------+--------------+----------+
+
+
+WARNING: [Synth 37-126] [ASSIGN-9]Some bits in IO 'LD' are not set. First unset bit index is 0. 
+RTL Name 'LD', Hierarchy 'ChipInterface', File 'chipInterface.sv', Line 2.
+WARNING: [Synth 37-125] [ASSIGN-10]Some bits in IO 'SW' are not read. First unread bit index is 6. 
+RTL Name 'SW', Hierarchy 'ChipInterface', File 'chipInterface.sv', Line 3.
+WARNING: [Synth 37-135] [ASSIGN-12]Unconnected input ports found on instance 'U', port name is 'A'. 
+Hierarchy 'ChipInterface', File '/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/chipInterface.sv', Line 8.
+WARNING: [Synth 37-135] [ASSIGN-12]Unconnected input ports found on instance 'U', port name is 'B'. 
+Hierarchy 'ChipInterface', File '/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/chipInterface.sv', Line 8.
+WARNING: [Synth 37-135] [ASSIGN-12]Unconnected input ports found on instance 'U', port name is 'C'. 
+Hierarchy 'ChipInterface', File '/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/chipInterface.sv', Line 8.
+WARNING: [Synth 37-135] [ASSIGN-12]Unconnected input ports found on instance 'U', port name is 'D'. 
+Hierarchy 'ChipInterface', File '/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/chipInterface.sv', Line 8.
+WARNING: [Synth 37-135] [ASSIGN-12]Unconnected input ports found on instance 'U', port name is 'E'. 
+Hierarchy 'ChipInterface', File '/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/chipInterface.sv', Line 8.
+WARNING: [Synth 37-135] [ASSIGN-12]Unconnected input ports found on instance 'U', port name is 'F'. 
+Hierarchy 'ChipInterface', File '/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/chipInterface.sv', Line 8.
+INFO: [Synth 37-85] Total of 8 linter message(s) generated.
+INFO: [Synth 37-45] Linter Run Finished!
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 8834.117 ; gain = 0.000 ; free physical = 15359 ; free virtual = 38419
+INFO: [Common 17-83] Releasing license: Synthesis
+11 Infos, 15 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+launch_runs synth_1 -jobs 10
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+[Tue Feb  3 15:44:46 2026] Launched synth_1...
+Run output will be captured here: /afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/project_1/project_1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Tue Feb  3 15:46:25 2026] Launched impl_1...
+Run output will be captured here: /afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/project_1/project_1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Tue Feb  3 15:47:52 2026] Launched impl_1...
+Run output will be captured here: /afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/project_1/project_1.runs/impl_1/runme.log
+open_hw_manager
+close_hw_manager
+close_project
+open_project /afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab0/project_2/project_2.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab0/project_2/project_2.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/afs/ece.cmu.edu/support/xilinx/xilinx.release/Vivado-2024.2/Vivado/2024.2/data/ip'.
+close_project
+open_project /afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/lab1_project/lab1_project.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/lab1_project/lab1_project.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/afs/ece.cmu.edu/support/xilinx/xilinx.release/Vivado-2024.2/Vivado/2024.2/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file /afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/lab1_project/lab1_project.srcs/utils_1/imports/synth_1/ChipInterface.dcp with file /afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/lab1_project/lab1_project.runs/synth_1/ChipInterface.dcp
+launch_runs synth_1 -jobs 10
+[Tue Feb  3 15:52:20 2026] Launched synth_1...
+Run output will be captured here: /afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/lab1_project/lab1_project.runs/synth_1/runme.log
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+[Tue Feb  3 15:54:26 2026] Launched synth_1...
+Run output will be captured here: /afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/lab1_project/lab1_project.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7s50csga324-1
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8923.828 ; gain = 0.000 ; free physical = 15187 ; free virtual = 38292
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc]
+WARNING: [Vivado 12-584] No ports matched 'CLOCK_100'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'BTN_IBUF[3]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTN[0]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTN[1]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTN[2]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTN[3]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB0[0]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB0[1]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB0[2]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB1[0]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB1[1]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB1[2]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D1_AN[0]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D1_AN[1]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D1_AN[2]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D1_AN[3]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D1_SEG[0]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D1_SEG[1]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D1_SEG[2]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D1_SEG[3]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D1_SEG[4]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D1_SEG[5]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D1_SEG[6]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D1_SEG[7]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D2_AN[0]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D2_AN[1]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D2_AN[2]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D2_AN[3]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D2_SEG[0]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D2_SEG[1]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D2_SEG[2]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D2_SEG[3]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D2_SEG[4]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D2_SEG[5]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D2_SEG[6]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D2_SEG[7]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'UART_rxd'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'UART_txd'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_clk_n'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_clk_p'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tx_n[0]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tx_n[1]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tx_n[2]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tx_p[0]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tx_p[1]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tx_p[2]'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'left_audio_out'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'right_audio_out'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ble_uart_tx'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ble_uart_rx'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ble_uart_rts'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:113]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:113]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ble_uart_cts'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'servo0'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'servo1'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:118]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:118]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'servo2'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:119]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:119]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'servo3'. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc:120]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/afs/andrew.cmu.edu/usr21/eqian/Downloads/Boolean240.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8930.621 ; gain = 0.000 ; free physical = 15122 ; free virtual = 38228
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+report_utilization -name utilization_1
+launch_runs impl_1 -jobs 10
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9563.594 ; gain = 0.000 ; free physical = 14441 ; free virtual = 37562
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9563.594 ; gain = 0.000 ; free physical = 14444 ; free virtual = 37566
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9563.594 ; gain = 0.000 ; free physical = 14439 ; free virtual = 37561
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 9563.594 ; gain = 0.000 ; free physical = 14441 ; free virtual = 37563
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9563.594 ; gain = 0.000 ; free physical = 14442 ; free virtual = 37563
+Wrote Device Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 9563.594 ; gain = 0.000 ; free physical = 14440 ; free virtual = 37562
+Write Physdb Complete: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.07 . Memory (MB): peak = 9563.594 ; gain = 0.000 ; free physical = 14444 ; free virtual = 37567
+[Tue Feb  3 15:57:57 2026] Launched impl_1...
+Run output will be captured here: /afs/andrew.cmu.edu/usr21/eqian/private/18240/Lab1/lab1_project/lab1_project.runs/impl_1/runme.log
+close_design
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9625.270 ; gain = 0.000 ; free physical = 14422 ; free virtual = 37551
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9625.270 ; gain = 0.000 ; free physical = 14422 ; free virtual = 37551
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9625.270 ; gain = 0.000 ; free physical = 14421 ; free virtual = 37551
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9625.270 ; gain = 0.000 ; free physical = 14421 ; free virtual = 37551
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9625.270 ; gain = 0.000 ; free physical = 14421 ; free virtual = 37551
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9625.270 ; gain = 0.000 ; free physical = 14421 ; free virtual = 37551
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9625.270 ; gain = 0.000 ; free physical = 14421 ; free virtual = 37551
+Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 9625.270 ; gain = 0.000 ; free physical = 14421 ; free virtual = 37551
+Restored from archive | CPU: 0.010000 secs | Memory: 0.057480 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 9625.270 ; gain = 0.000 ; free physical = 14421 ; free virtual = 37551
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9625.270 ; gain = 0.000 ; free physical = 14421 ; free virtual = 37551
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 9732.648 ; gain = 107.379 ; free physical = 14340 ; free virtual = 37478
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+report_utilization -name utilization_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Feb  3 16:00:11 2026...
