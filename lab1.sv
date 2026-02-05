@@ -4,14 +4,18 @@ module Zorgian
   (input logic a, b, c, d, e, f,
    output logic valid, vowel);
 
-   logic a_not, b_not, c_not, d_not, e_not, f_not;
-   logic nt1, nt2, nt2a, nt2b, nt3a, nt3b, nt3,
+    logic a_not, b_not, c_not, d_not, e_not, f_not;
+    logic nt1, nt2, nt2a, nt2b, nt3a, nt3b, nt3,
         nt4, nt4a, nt4b, nt4c, nt4d, nt5, nt5a, nt5b, nt6, nt7,
         nt8, nt9, nt10, nt11, nt12,
         nt13, nt14, nt15, nt16,
         nt17, nt18;
     logic at1, at2, at3, at4, at5;
 
+    logic ft1, ft2, ft3;
+    logic ft4, ft5;
+
+    // inverters
     not (a_not, a),
         (b_not, b),
         (c_not, c),
@@ -62,11 +66,11 @@ module Zorgian
     // (a + b' + e' + f')
     nor (nt11, a, b_not, e_not, f_not);
 
-
     nor (at1, nt1, nt2, nt3, nt4),
         (at2, nt5, nt6, nt7, nt8),
         (at3, nt9, nt10, nt11);
-    logic ft1, ft2, ft3;
+
+    // valid output
     nor (ft1, at1, at1);
     nor (ft2, at2, at2);
     nor (ft3, at3, at3);
@@ -93,8 +97,7 @@ module Zorgian
     // a' + c + d
     nor (nt18, a_not, c, d);
 
-    logic ft4, ft5;
-
+    // vowel output
     nor (at4, nt12, nt13, nt14),
         (at5, nt15, nt16, nt17, nt18);
     nor (ft4, at4, at4);
@@ -108,8 +111,10 @@ module Zorgian_test
      input logic valid, vowel);
 
     initial begin
-        $monitor($time,,
-            "a = %b, b = %b, c = %b, d = %b, e = %b, f = %b, valid = %b, vowel = %b", a, b, c, d, e, f, valid, vowel);
+        $monitor( "a = %b, b = %b, c = %b, d = %b \n",
+                   a, b, c, d,
+                   "e = %b, f = %b, valid = %b, vowel = %b \n",
+                   e, f, valid, vowel);
 
         // if d e f = 1 0 1, should always be valid but not vowel
 
@@ -152,7 +157,7 @@ module Zorgian_test
         #10 a = 1; b = 0; c = 1; d = 0; e = 0; f = 1; // valid and vowel
 
         // rest of letters that are not in def 101 or 010
-        $display("Valids and not vowels below");
+        #10 $display("Valids and not vowels below");
         #10 a = 0; b = 0; c = 0; d = 0; e = 0; f = 0; // valid and not vowel
         #10 a = 0; b = 1; c = 1; d = 0; e = 0; f = 0; // valid and not vowel
         #10 a = 1; b = 0; c = 1; d = 0; e = 0; f = 0; // valid and not vowel
@@ -168,10 +173,10 @@ module Zorgian_test
         #10 a = 0; b = 0; c = 1; d = 1; e = 1; f = 0; // valid and not vowel
         #10 a = 0; b = 1; c = 0; d = 1; e = 1; f = 0; // valid and not vowel
         #10
-        
+
         // invalids
         $display("Invalids");
-        #10 a = 0; b = 0; c = 0; d = 0; e = 0; f = 1; 
+        #10 a = 0; b = 0; c = 0; d = 0; e = 0; f = 1;
         #10 a = 1; b = 0; c = 1; d = 1; e = 1; f = 0;
         #10 a = 0; b = 1; c = 1; d = 0; e = 1; f = 1;
         #10 $finish;
